@@ -915,7 +915,7 @@ body {
   }
       .swp-section {
         height: auto; 
-        background: url('../img/Rectangle\ 9.png') center/cover no-repeat !important;
+        background: url('./Rectangle\ 9.png') center/cover no-repeat !important;
       }
         .swp-img img {
     width: 100%;
@@ -957,4 +957,5 @@ body {
   }
 
 } */
+
 
