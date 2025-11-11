@@ -70,10 +70,14 @@ img {
 body {
   font-family: var(--font-primary);
 }
+
    * {
+
     /* outline: 1px solid red !important;  */
     /* يحدد حدود كل عنصر */
+
   }
+
 
 /* Refrence  !*/
 .container {
@@ -125,6 +129,13 @@ body {
   color: #000;
   font-weight: var(--fw-16-medium);
   font-size: var(--fs-16);
+  padding: 1rem;
+
+}
+.navbar-links a:hover{
+      border-bottom:  3px solid #F5B400; 
+        transition: border-bottom 0.3s ease; 
+
 }
 
 .navbar-btn {
@@ -248,7 +259,7 @@ body {
   max-width: 1200px;
   margin: 0 auto 80px auto;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-    top: -80px;
+    top: 20px;
     position: relative;
       height: auto;
 }
@@ -263,7 +274,7 @@ body {
   background: #F5B400;
   border-radius: 50%;
   position: absolute;
-  top: 40px;
+  top: 25px;
   left: 50%;
   transform: translate(-50%, -50%);
 }
@@ -529,7 +540,16 @@ body {
   border-radius: 15px;
   box-shadow: 0 5px 15px rgba(0,0,0,0.08);
   text-align: left;
+    transition: transform 0.3s ease;
+
 }
+.swim-card:hover ,
+.swim-card:active {
+    transform: translateY(-5px);
+    
+
+}
+
 
 .swim-card img {
   
