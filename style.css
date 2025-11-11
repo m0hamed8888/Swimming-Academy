@@ -30,7 +30,7 @@ body {
   margin: 0;
   font-family: Arial, sans-serif;
   font-family: var(--font-primary);
-  outline: 3px solid rgba(0,128,255,0.25); /* page boundary */
+  outline: 3px solid rgba(0,128,255,0.25); 
 }
 
 /* Typography usage */
@@ -70,13 +70,6 @@ img {
 body {
   font-family: var(--font-primary);
 }
-
-   * {
-
-    /* outline: 1px solid red !important;  */
-    /* يحدد حدود كل عنصر */
-
-  }
 
 
 /* Refrence  !*/
@@ -119,7 +112,6 @@ body {
 
 .navbar-links {
   display: flex;
-  /* gap: 30px; */
   justify-content: right;
   width: 58%;
 }
@@ -166,9 +158,7 @@ body {
 }
 
 /* Header section  */
-/* ------------------------------ */
-/* Hero Section (Independent Style) */
-/* ------------------------------ */
+
 
 .hero-section {
   position: relative;
@@ -746,7 +736,10 @@ body {
   transition: color 0.3s;
 }
 
-.swim-solution-btn:hover {
+.swim-solution-btn:hover ,
+.swp-btn:hover,
+.learn-btn:hover
+{
   color: #0088FF;
 }
 
@@ -885,12 +878,8 @@ body {
     padding: 15px;
     flex-direction: column;
     background: #fff;
-    /* position: absolute;
-        top: 60px;
-        right: 10%; */
     width: 200px;
     padding: 15px;
-    /* box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1); */
   }
 
   .links a {
@@ -911,14 +900,7 @@ body {
     width: 100%;
   }
   
-  /* #swp-card{
-    width: 50%;
-    height: 50%;
-  } */
-  /* .swp-img img {
-    width: 100%;
-    height: 50px;
-  } */
+ 
 }
 @media (max-width: 1000px) {
   .classes-container .Line {
