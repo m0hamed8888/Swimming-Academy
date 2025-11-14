@@ -45,7 +45,11 @@ h2 {
   font-size: var(--fs-24);
   font-weight: var(--fw-16-medium);
 }
-
+figcaption {
+  color: var(--color-h2);
+  font-size: var(--fs-24);
+  font-weight: var(--fw-16-medium);
+}
 h4 {
   color: var(--color-icon);
   font-size: var(--fs-16);
@@ -196,7 +200,7 @@ body {
   margin-bottom: 20px;
 }
 
-.hero-section .hero-content p {
+.hero-section .hero-content .h2 {
   font-size: 24px;
   color: #e5e5e5;
   margin-bottom: 30px;
@@ -949,7 +953,7 @@ body {
     .swp-title {
       font-size: 24px;
     }
-    .hero-section .hero-content p{
+    .hero-section .hero-content .h2{
       font-size: var(--fs-16);
     }
     .classes-container {
@@ -958,5 +962,4 @@ body {
     
  
 }
-
 
