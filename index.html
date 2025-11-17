@@ -5,7 +5,6 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
   <title>كابتن محسن | أكاديمية سباحة في الشروق | Mohsen Academy</title>
 
@@ -37,7 +36,7 @@
     <div class="navbar-logo">
       MOHSEN ACADEMY</div>
 
-    <div class="navbar-toggle" onclick="toggleNavbar()">☰</div>
+    <div class="navbar-toggle" id="navbarToggle" onclick="toggleNavbar()">☰</div>
 
     <div class="navbar-links" id="navbarLinks">
       <div class="links">
@@ -48,7 +47,8 @@
       </div>
     </div>
   </nav>
-  <!-- 🔹 Navbar End -->
+  <!--  Navbar End -->
+
   <header class="hero-section">
     <div class="hero-overlay"></div>
     <div class="hero-content">
@@ -273,7 +273,7 @@
 
           <div>
             <h3>Contact Info</h3>
-            <a href="#">📍 Locations: 10th of Ramadan, El Shorouk, Badr, El Mostakbal </a>
+            <a href="#">📍 Locations: 10th of Ramadan, El Shorouk, Badr</a>
             <a href="#">📞 Phone / WhatsApp: +20 01016521880</a>
             <a href="#">Email: Mohsen@academyname.com </a>
             <a href="#">⏰ Working Hours: Sun-Thu | 12:00 AM – 9:00 PM </a>
@@ -292,9 +292,31 @@
 
 </body>
 <script>
-  function toggleNavbar() {
-    document.getElementById("navbarLinks").classList.toggle("active");
+function toggleNavbar() {
+  const navbarLinks = document.getElementById("navbarLinks");
+  const toggleIcon = document.getElementById("navbarToggle");
+
+  navbarLinks.classList.toggle("active");
+
+  if (navbarLinks.classList.contains("active")) {
+    toggleIcon.textContent = "✖";   
+  } else {
+    toggleIcon.textContent = "☰";  
   }
+}
+document.addEventListener("click", function(e) {
+  const navbarLinks = document.getElementById("navbarLinks");
+  const toggleIcon = document.getElementById("navbarToggle");
+
+  if (
+    navbarLinks.classList.contains("active") &&
+    !navbarLinks.contains(e.target) &&
+    !toggleIcon.contains(e.target)
+  ) {
+    navbarLinks.classList.remove("active");
+    toggleIcon.textContent = "☰";
+  }
+});
 </script>
 <script type="application/ld+json">
   {
