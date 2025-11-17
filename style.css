@@ -1,11 +1,8 @@
 :root {
   --font-primary: "DM Sans", sans-serif;
 
-  /* Font sizes & weights */
-  /* --fs-24: 24px; */
   --fw-24-semibold: 600;
 
-  /* --fs-16: 16px; */
   --fw-16-medium: 500;
   --fw-16-semibold: 600;
 
@@ -17,23 +14,23 @@
   --fw-32: 32px;
   --fs-1: 1rem;
 
-  /* Colors */
   --color-h1: #FFFFFF;
   --color-h2: #0088FF;
   --color-p: #0000006b;
   --color-icon: #F5B400;
-  /* icons / svg */
 }
 
-
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
 body {
   margin: 0;
-  font-family: Arial, sans-serif;
   font-family: var(--font-primary);
   outline: 3px solid rgba(0,128,255,0.25); 
 }
 
-/* Typography usage */
 h1 {
   font-size: var(--fs-24);
   font-weight: var(--fw-24-semibold);
@@ -71,27 +68,17 @@ img {
 }
 
 
-body {
-  font-family: var(--font-primary);
-}
 
-
-/* Refrence  !*/
 .container {
   background: #7a666685;
   max-width: 1200px;
   margin: 0 auto;
-  /* padding: 0 16px; */
 }
 
 
 /* Navbar Style */
 
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
+
 
 .navbar {
   display: flex;
@@ -168,11 +155,10 @@ body {
   position: relative;
   width: 100%;
   height: 100vh;
-  background: url('./img-header.png') center center/cover no-repeat;
+  background: url('./img-header.webp') center center/cover no-repeat;
   display: flex;
   justify-content: start;
   align-items: center;
-  /* text-align: left; */
   overflow: hidden;
 }
 
@@ -180,7 +166,6 @@ body {
   position: absolute;
   inset: 0;
   background-color: #000;
-  /* الطبقة الشفافة الغامقة */
   opacity: 14%;
 }
 
@@ -222,7 +207,6 @@ body {
   background-color: #ffcc00;
 }
 
-/* Responsive tweak */
 @media (max-width: 768px) {
   .hero-section .hero-content h1 {
     font-size: 40px;
@@ -235,14 +219,13 @@ body {
 
 /* Content  */
 
-/* ------------------------------ */
+
 /* Our Classes +  */
-/* ------------------------------ */
+
 
 .classes-about-section {
   position: relative;
   margin-top: -120px;
-  /* علشان يطلع فوق الهيدر */
   z-index: 10;
 }
 
@@ -338,7 +321,8 @@ body {
 }
 
 .class-card p {
-  margin-left: 15px;
+  padding-top: 1rem;
+    margin-left: 15px;
       align-self: start;
   font-size: var(--fs-16);
   font-weight: var(--fw-16-medium);
@@ -352,6 +336,7 @@ body {
     left: 50%;
     transform: translate(-50%, -50%);
     width: 50%;
+    height: 0.25rem;
 }
 
 
@@ -391,18 +376,16 @@ body {
 }
 .footer-socials {
   display: flex;            
-  align-items: center;     
-  gap: 5px;  
+  align-items: center;   
+  justify-content: space-evenly;  
   margin-top: 30px;              
 }
-.footer-socials i{
+.footer-socials .img-social{
   color: var(--color-icon);
-  font-size: var(--fs-24);
+      height: 24px;
+    width: 24px;
 }
-.footer-socials i:active ,
-.footer-socials i:focus  { 
-  color: var(--color-h2);
-}
+
 
 
 
@@ -557,11 +540,10 @@ body {
 }
 
 .swim-card p {
-  /* font-size: 14px; */
   padding: 1rem 0.5rem 0.5rem 0;
 }
 
-/* ✅ Responsive */
+/*  Responsive */
 @media(max-width: 900px) {
   .swim-classes-container {
     grid-template-columns: 1fr;
@@ -704,7 +686,7 @@ body {
 
 .swim-solution-images img:first-child {
   position: relative;
-  top: 50px; /* نزل الصورة الأولى */
+  top: 50px; 
 }
 
 .swim-solution-text h5 {
@@ -747,7 +729,6 @@ body {
   color: #0088FF;
 }
 
-/* ✅ Responsive */
 @media (max-width: 900px) {
   .swim-solution-container {
     grid-template-columns: 1fr;
@@ -836,7 +817,6 @@ body {
   background-color: #e2a800;
 }
 
-/* ✅ Responsive Design */
 @media (max-width: 600px) {
   .contact-container {
     padding: 20px;
@@ -852,7 +832,7 @@ body {
 /* End */
 /* End Content  */
 
-/* ✅ Responsive */
+/* Responsive */
 @media (max-width: 768px) {
   .navbar {
     position: fixed;
@@ -927,14 +907,13 @@ body {
   }
 
 }
-/* mobile  */
 @media (max-width: 700px) {
 #down {
     display: none !important;
   }
       .swp-section {
         height: auto; 
-        background: url('./Rectangle 9.png') center/cover no-repeat !important;
+        background: url('./Rectangle\ 9.webp') center/cover no-repeat !important;
       }
         .swp-img img {
     width: 100%;
