@@ -22,6 +22,9 @@
 --bg-content:  #f6f7f8; 
 --bg-card: #ffffff;       
 }
+html {
+  scroll-behavior: smooth;
+}
 
 * {
   box-sizing: border-box;
@@ -123,7 +126,7 @@ img {
 }
 
 .navbar-links a:hover {
-  border-bottom: 3px solid #F5B400;
+  border-bottom: 3px solid #E6A200;
   transition: border-bottom 0.3s ease;
 
 }
@@ -202,7 +205,7 @@ img {
 
 .hero-section .hero-btn {
   display: inline-block;
-  background-color: #f9b233;
+  background-color: var(--color-icon);
   color: #000;
   padding: 10px 22px;
   text-decoration: none;
@@ -258,7 +261,7 @@ img {
 .dot {
   width: 15px;
   height: 15px;
-  background: #F5B400;
+  background:  var(--color-icon);
   border-radius: 50%;
   position: absolute;
   top: 25px;
@@ -270,7 +273,7 @@ img {
 
 
 .classes-header h5 {
-  color: #f9b233;
+  color:  var(--color-icon);
   font-weight: 600;
   font-size: 14px;
   margin-bottom: 10px;
@@ -554,7 +557,7 @@ img {
 }
 
 .swim-card h3 {
-  color: #0077ff;
+  color: var(--color-h2);
   font-size: 18px;
   margin-bottom: 10px;
 }
@@ -632,7 +635,7 @@ img {
 .swp-tag {
   font-size: var(--fs-16);
   font-weight: 600;
-  color: #F5B500;
+  color: var(--color-icon);
   margin-bottom: 10px;
   letter-spacing: 1px;
 }
@@ -640,7 +643,7 @@ img {
 .swp-title {
   font-size: var(--fw-32);
   font-weight: 700;
-  color: #0077ff;
+  color: var(--color-h2);
   margin-bottom: 16px;
   line-height: 1.3;
 }
@@ -713,7 +716,7 @@ img {
 
 .swim-solution-text .f-text {
   color: #F5B400;
-  font-size: 16px;
+  font-size: var(--fs-16);
   font-weight: 600;
   margin-bottom: 15px;
 }
