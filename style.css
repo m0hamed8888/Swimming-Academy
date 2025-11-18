@@ -15,9 +15,12 @@
   --fs-1: 1rem;
 
   --color-h1: #FFFFFF;
-  --color-h2: #0088FF;
+  --color-h2: #0066CC;
   --color-p: #333333;
-  --color-icon: #F5B400;
+  --color-icon: #E6A200;
+  
+--bg-content:  #f6f7f8; 
+--bg-card: #ffffff;       
 }
 
 * {
@@ -235,7 +238,8 @@ img {
 }
 
 .classes-container {
-  background: #f6f7f8;
+  /* background: #f6f7f8; */
+  background: var(--bg-content);
   border-radius: 20px;
   padding: 40px 30px;
   max-width: 1200px;
@@ -301,7 +305,8 @@ img {
   max-width: 271px;
   width: 100%;
   height: 265px;
-  background: #fff;
+  /* background: #fff; */
+  background: var(--bg-card);
   border-radius: 10px;
   padding: 20px;
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.05);
@@ -374,6 +379,7 @@ img {
   font-size: 22px;
   font-weight: 700;
   margin-bottom: 15px;
+  color: var(--color-h2);
 }
 
 .footer-desc {
@@ -524,7 +530,8 @@ img {
 }
 
 .swim-card {
-  background: white;
+  /* background: white; */
+  background: var(--bg-card);
   padding: 30px;
   border-radius: 15px;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
